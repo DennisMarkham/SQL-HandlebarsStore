@@ -1,0 +1,20 @@
+{{#each products}}
+<span>
+  	   
+      	<img src = "{{this.img}}" alt = "{{this.date}}" />
+      	
+      	<p><b>{{this.pname}}</b></p>
+      	<p><b>{{this.price}}</b></p>
+
+ </span>
+  {{/each}}
+
+  <form action="/" method="POST">
+	Product:<textarea type="text" name="product"></textarea>
+	<br>
+	Price: <textarea type="text" name="price"></textarea>
+	<br>
+	Image url: <textarea type="text" name="image"></textarea>
+	<br>
+	<button type="submit">Add Product</button>
+</form>
